@@ -1,0 +1,10 @@
+<h1>the index page</h1>
+
+<div class="list-group">
+  <% @dogs.each do |dog| %>
+    <div class="list-group-item">
+      <ul class="dog">
+          <li><%= link_to(dog.name, dog_path(dog.id))  %></li>
+      </ul>
+  <% end %>
+</div>
