@@ -1,0 +1,19 @@
+<%= form_for @dog do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+
+  <%= f.label :breed %>
+  <%= f.text_field :breed %>
+
+  <%= f.label :colour %>
+  <%= f.text_field :colour %>
+
+  <%= f.label :image %>
+  <%= f.text_field :image %>
+
+  <%= f.label :fun_fact %>
+  <%= f.text_field :fun_fact %>
+
+  <%= f.submit 'Create dog!' %>
+  
+<% end %>
